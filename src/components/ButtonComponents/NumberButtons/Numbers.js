@@ -12,7 +12,7 @@ console.log(numbers);
 
 //Import your array data to from the provided data file
 
-export const Numbers = () => {
+export const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   return (
     <div className='number-block'>
@@ -23,7 +23,7 @@ export const Numbers = () => {
       
       
           numbers.map((number, index) => {
-            return <NumberButton key={index} text={number} />
+            return <NumberButton key={index} text={number} display={props.display} func={props.updateDisplay}/>
           })
           
       

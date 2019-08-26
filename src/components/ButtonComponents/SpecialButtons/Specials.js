@@ -10,7 +10,7 @@ import { SpecialButton } from './SpecialButton.js';
 
 console.log({specials});
 
-export const Specials = () => {
+export const Specials = (props) => {
   // STEP 2 - add the imported data to state
 
   return (
@@ -20,7 +20,7 @@ export const Specials = () => {
        it any props needed by the child component*/
        
        specials.map( (value, index) => {
-          return <SpecialButton key={index} text={value} />
+          return <SpecialButton key={index} text={value} display={props.display} func={props.updateDisplay}/>
        })
 
       }

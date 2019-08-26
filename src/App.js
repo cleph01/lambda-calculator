@@ -22,7 +22,7 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   //Holds the Display Result  
-  const [output, updateOutput] = useState(0);
+  const [output, updateOutput] = useState('');
 
   return (
     <div className="container">
@@ -33,9 +33,9 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */
           
           <div className="number-wrapper">
-            <Operators />
-            <Specials />
-            <Numbers />
+            <Operators display={output} updateDisplay={updateOutput}/>
+            <Specials display={output} updateDisplay={updateOutput} />
+            <Numbers display={output} updateDisplay={updateOutput} />
             
           </div>
 
