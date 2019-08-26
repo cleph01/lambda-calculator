@@ -10,3 +10,96 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width:29rem;
+  background-color:#bb3133;
+  border-radius: 0.5rem;
+}
+.logo-container{
+  display: flex;
+  align-items: flex-end;
+  height:3.80rem;
+}
+.logo{
+  width:7.5rem;
+  height: auto;
+  margin-left:2.0rem;
+}
+.display{
+  height:4.25rem;
+  width:25rem;
+  margin: 0 auto;
+  font-size:3rem;
+  padding: 1rem 0rem;
+  background-color: #2e2829;
+  border-radius:15rem;
+  color:#fff;
+  margin-top:1.20rem;
+  text-align: end;
+}
+.numberPad{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .number-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-around;
+  width:20rem;
+  height:30rem;
+} */
+.special-block{
+  width:19.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+  margin-left:1.25rem;
+  margin-top:1.75rem;
+}
+.number-block{
+  width:19.95rem;
+  height:23rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+  margin-left:1.25rem;
+  margin-top:0.75rem;
+}
+.operator-block{
+  height:28.5rem;
+  width:5.20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-around;
+  margin-left:22rem;
+  /* margin-top:0.50rem;  */
+  position: absolute;
+}
+.numberButton{
+  width:5.20rem;
+  height:5.20rem;
+  font-size:2rem;
+  border-radius: 50%;
+  background-color: #113c78;
+  color: #fff;
+}
+.zeroButton{
+  width:12.25rem;
+  height:5.20rem;
+  font-size:2rem;
+  border-radius: 50rem;
+  background-color: #113c78;
+  color: #fff;
+}
+.output{
+  margin-right:1rem;
+  margin-top:0.35rem;
+}
